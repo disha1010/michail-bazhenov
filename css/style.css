@@ -1,0 +1,28 @@
+#vendor-bootstrap .navbar-brand {
+  height: 100%;
+}
+#vendor-bootstrap .navbar-link-item {
+  line-height: 34px;
+  text-transform: uppercase;
+  font-weight: 900;
+  /* font-family: openSans; */
+  color: #7a8893;
+}
+.navbar-search .form-control {
+  display: none;
+}
+.navbar-search .btn {
+  line-height: 2.5;
+  border: unset;
+  background: unset;
+}
+#vendor-bootstrap .dropdown-menu {
+  background-color: #f6f6f6;
+  border: unset;
+  border-radius: unset;
+  box-shadow: unset;
+  padding: 25px 10px 30px 0;
+}
+.dropdown-link-item:hover {
+  color: #136764;
+} 
