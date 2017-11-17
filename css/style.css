@@ -10,20 +10,47 @@
 * {
   font-family: OpenSans, sans-serif
 }
-#vendor-bootstrap .navbar-brand {
-  height: 100%;
+/*header  top*/
+.container__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.site-branding {
+  display: inline-block;
+  order: 0;
+}
+.main-navigation {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.main-navigation .dropdown-menu {
+  border: unset;
+}
+.header-top .main-navigation .sub-menu {    
+  border-top: 2px solid #136764;
+  background: #f6f6f6;
+  box-shadow: unset;
+  padding: 25px 10px 10px 20px;
+  border-radius: unset;
+  margin-top: -2px;
 }
 #vendor-bootstrap .navbar-link-item {
   line-height: 34px;
   text-transform: uppercase;
   font-weight: 900;
-  /* font-family: OpenSans, sans-serif; */
-  color: #7a8893;
+  color: #acb8c1;
+  padding: 1.7em 1em;
 }
-#vendor-bootstrap .navbar-search i {
-  color: #7a8893;
-  font-size: 12px;
+#vendor-bootstrap .navbar-link-item:hover,
+#vendor-bootstrap .open .navbar-link-item:hover,
+#vendor-bootstrap .navbar-link-item:focus,
+#vendor-bootstrap .open .navbar-link-item:focus {
+  background: unset;
 }
+
 #vendor-bootstrap .navbar-link-item:hover,
 #vendor-bootstrap .open .navbar-link-item {
   color: #323232;
@@ -35,13 +62,6 @@
   line-height: 2.5;
   border: unset;
   background: unset;
-}
-#vendor-bootstrap .dropdown-menu {
-  background-color: #f6f6f6;
-  border: unset;
-  border-radius: unset;
-  box-shadow: unset;
-  padding: 25px 10px 10px 20px;
 }
 #vendor-bootstrap .dropdown-link-item {
   color: #323232;
@@ -76,7 +96,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #136764;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -103,9 +123,50 @@
 }
 .primary-bg-img {
   width: 100%;
-  margin-top: -20px;
 }
 .primary-info .txt-block {
   position: absolute;
   top: 0;
+}
+.primary-info {
+  position: relative;
+}
+.primary-bg-img {
+  width: 100%;
+}
+.primary-info .txt-block {
+  position: absolute;
+  top: 0;
+} color: #fff;
+  text-transform: uppercase;
+}
+.buttons-block .btn-gray {
+  background-color: #136764;
+}
+.buttons-block .btn-transparent {
+  border: 1px solid #fff;
+}
+.primary-info {
+  position: relative;
+}
+.primary-bg-img {
+  width: 100%;
+}
+.primary-info .txt-block {
+  position: absolute;
+  top: 0;
+}
+.primary-info {
+  position: relative;
+}
+.primary-bg-img {
+  width: 100%;
+}
+.primary-info .txt-block {
+  position: absolute;
+  top: 0;
+}
+.search-form__toogle {
+  color: #acb8c1;
+  margin: 0 -15px 0 36px;
 }
