@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Main</title>
+	<title>Фонд Михаила Баженова</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -48,7 +49,7 @@
 										</a>
 										<ul class="sub-menu dropdown-menu dropdown-menu-left">
 											<li>
-												<a class="dropdown-link-item" href="#">БДТ им. Товстоногова</a>
+												<a class="dropdown-link-item" href="activities.html">БДТ им. Товстоногова</a>
 											</li>
 											<li>
 												<a class="dropdown-link-item" href="#">Фестиваль Фонд Курехина</a>
@@ -132,9 +133,10 @@
 					<span class="block-title-underline"></span>
 					<div class="events-list">
 						<div class="row">
-							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 								<div class="event-list-item">
 									<div class="event-img">
+										<span class="event-status active">Реализуется</span>
 										<a href="#">
 											<img src="images/bdt.jpg" alt="">
 										</a>
@@ -147,9 +149,10 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 								<div class="event-list-item">
 									<div class="event-img">
+										<span class="event-status active">Реализуется</span>
 										<a href="#">
 											<img src="images/dyagilev.jpg" alt="">
 										</a>
@@ -162,9 +165,10 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 								<div class="event-list-item">
 									<div class="event-img">
+										<span class="event-status complete">Завершён</span>
 										<a href="#">
 											<img src="images/kuryokhin.jpg" alt="">
 										</a>
@@ -177,9 +181,10 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 								<div class="event-list-item">
 									<div class="event-img">
+										<span class="event-status complete">Завершён</span>
 										<a href="#">
 											<img src="images/temple.jpg" alt="">
 										</a>
@@ -192,9 +197,10 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 								<div class="event-list-item">
 									<div class="event-img">
+										<span class="event-status active">Реализуется</span>
 										<a href="#">
 											<img src="images/cathedral.jpg" alt="">
 										</a>
@@ -207,9 +213,10 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
 								<div class="event-list-item">
 									<div class="event-img">
+										<span class="event-status active">Реализуется</span>
 										<a href="#">
 											<img src="images/help.jpg" alt="">
 										</a>
@@ -245,12 +252,12 @@
 							<div class="form-group">
 								<input type="email" class="form-control" id="email" placeholder="Email/телефон" name="email">
 							</div>
-							<div class="form-group">
+							<div class="form-group textarea">
 								<textarea class="form-control" rows="5" id="comment" placeholder="Сообщение"></textarea>
 							</div>
-							<div class="form-group capcha verify">
-								<input type="password" id="password" name="password" class="form-control col-lg-8">
-								<img src="images/capcha.png" class="camcha-img" alt="">
+							<div class="form-group capcha">
+								<input type="password" id="password" name="password" class="form-control" placeholder="Введите код с картинки">
+								<img src="images/capcha.png" class="capcha-img" alt="">
 							</div>
 							<div class="buttons-block">
 								<button type="submit" class="btn btn-green">Отправить</button>
@@ -260,37 +267,36 @@
 				</div>
 			</div>
 		</div>
+
 		<footer class="footer">
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				<div class="row row-top">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 						<div class="site-branding">
 							<a class="site-logo" href="#">
 								<img src="images/logo_footer.png" alt="">
 							</a>
 						</div>
 					</div>
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 						<div class="social-network-icons">
-							<i class="fa fa-facebook"></i>
-							<i class="fa fa-twitter"></i>
-							<i class="fa fa-google-plus"></i>
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<i class="fa fa-google-plus" aria-hidden="true"></i>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<div class="site-branding">
-							<a class="site-logo" href="#">
-								<img src="images/logo_footer.png" alt="">
-							</a>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="site-copyrights">
+							<span class="site-update">2017</span>
+							<span class="site-owner">© Баженов Михаил Викторович</span>
+							<a class="footer-link">Политика конфиденциальности</a>
 						</div>
 					</div>
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<div class="site-branding">
-							<a class="site-logo" href="#">
-								<img src="images/logo_footer.png" alt="">
-							</a>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="site-creator">Создание сайта:
+							<a class="footer-link">«Веб Гармония»</a>
 						</div>
 					</div>
 				</div>
