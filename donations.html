@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Пожертвования</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="vendor-bootstrap">
+    <header class="header-wrapper">
+      <div class="header-top">
+        <div class="container">
+          <div class="container__flex">
+            <div class="site-branding">
+              <a class="site-logo" href="main.html">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <nav class="main-navigation" role="navigation">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                  aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown-underline">
+                    <a class="navbar-link-item" href="#">О фонде</a>
+                  </li>
+                  <li class="dropdown-underline">
+                    <a class="navbar-link-item" href="#">О Михаиле</a>
+                  </li>
+                  <li class="dropdown dropdown-underline">
+                    <a class="navbar-link-item" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Деятельность
+                      <!-- <span class="caret"></span> -->
+                    </a>
+                    <ul class="sub-menu dropdown-menu dropdown-menu-left">
+                      <li>
+                        <a class="dropdown-link-item" href="activities.html">БДТ им. Товстоногова</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-link-item" href="#">Фестиваль Фонд Курехина</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-link-item" href="#">Фестиваль Дягилев P.S.</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-link-item" href="#">Храм Рождества Иоанна Предпечи в Юкках</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-link-item" href="#">Собор Михаила Архангела в Токсово</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-link-item" href="#">Помощь детям с онкологиями</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-link-item" href="#">Поддержка детского дома</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-underline">
+                    <a class="navbar-link-item active" href="donations.html">Пожертвования</a>
+                  </li>
+                  <li class="dropdown-underline">
+                    <a class="navbar-link-item" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+            </nav>
+            <div class="header-search pull-right">
+              <span class="search-form__toogle">
+                <i class="glyphicon glyphicon-search"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-content">
+      <div class="breadcrumbs">
+        <div class="container">
+          <span class="breadcrumbs-item">Главная</span>
+          <span class="breadcrumbs-item">Деятельность</span>
+          <span class="breadcrumbs-item current">БДТ им. Г.А.Товстоногова</span>
+        </div>
+        <div class="donations-bg"></div>
+      </div>
+      <div class="donations-content">
+        <div class="container">
+          <div class="donation-description">
+            <h2 class="block-title">Пожертвования</h2>
+            <span class="block-title-underline"></span>
+            <div class="block-txt">
+              <p>Михаил Баженов является совладельцем и вице-президентом Холдинговой компании «Адамант», бренда Международная
+                неделя моды «Aurora Fashion Week Russia» , Академии актерского мастерства «Doors to Hollywood» в Москве,
+                эксклюзивной Японской косметической линии «Forlle’d», а также совладельцем 14 известных в Петербурге и Москве
+                ресторанов брэнда Ginza Project.</p>
+            </div>
+          </div>
+          <div class="donation-pay-form">
+            <form class="form" method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
+              <input class="form-control" type="hidden" name="receiver" value="41001xxxxxxxxxxxx">
+              <div class="form-group">
+                <label class="form-label" for="short-desc">Название платежа</label>
+                <input class="form-control" type="text" class="form-control" name="short-dest" value="Пожертвовать деньги в Фонд">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="need-fio">ФИО плательщика</label>
+                <input class="form-control" type="text" name="need-fio" value="" placeholder="Иванов Иван Иванович">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="sum">Сумма</label>
+                <input class="form-control" type="hidden" name="label" value="$order_id">
+                <input class="form-control" type="hidden" name="quickpay-form" value="donate">
+                <input class="form-control" type="hidden" name="targets" value="транзакция {order_id}">
+                <input class="form-control" type="number" name="sum" value="" data-type="number">
+                <span class="icon-rub">&#8381;</span>
+              </div>
+              <span class="block-title-underline"></span>
+              <div class="buttons-block">
+                <button type="submit" class="btn btn-green">Перевести</button>
+                <div class="payment-types">
+                  <img src="images/logo-visa.png" alt="">
+                  <img src="images/logo-master-card.png" alt="">
+                  <img src="images/logo-yandex-money.png" alt="">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row row-top">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="site-branding">
+              <a class="site-logo" href="#">
+                <img src="images/logo_footer.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="social-network-icons">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-google-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="site-copyrights">
+              <span class="site-update">2017</span>
+              <span class="site-owner">© Баженов Михаил Викторович</span>
+              <a class="footer-link">Политика конфиденциальности</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="site-creator">Создание сайта:
+              <a class="footer-link">«Веб Гармония»</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

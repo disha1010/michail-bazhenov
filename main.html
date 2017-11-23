@@ -8,6 +8,7 @@
 	<title>Фонд Михаила Баженова</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap_my.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -19,7 +20,7 @@
 				<div class="container">
 					<div class="container__flex">
 						<div class="site-branding">
-							<a class="site-logo" href="#">
+							<a class="site-logo" href="main.html">
 								<img src="images/logo.png" alt="">
 							</a>
 						</div>
@@ -72,7 +73,7 @@
 										</ul>
 									</li>
 									<li class="dropdown-underline">
-										<a class="navbar-link-item" href="#">Пожертвования</a>
+										<a class="navbar-link-item" href="donations.html">Пожертвования</a>
 									</li>
 									<li class="dropdown-underline">
 										<a class="navbar-link-item" href="#">Контакты</a>
@@ -244,26 +245,24 @@
 					<div class="block-txt">
 						<p>Для связи с Михаилом Баженовым заполните форму ниже, оставив свои контактные данные</p>
 					</div>
-					<div class="form">
-						<form action="/action_page.php">
-							<div class="form-group">
-								<input type="text" class="form-control" id="usr" placeholder="Ваше имя" name="name">
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" id="email" placeholder="Email/телефон" name="email">
-							</div>
-							<div class="form-group textarea">
-								<textarea class="form-control" rows="5" id="comment" placeholder="Сообщение"></textarea>
-							</div>
-							<div class="form-group capcha">
-								<input type="password" id="password" name="password" class="form-control" placeholder="Введите код с картинки">
-								<img src="images/capcha.png" class="capcha-img" alt="">
-							</div>
-							<div class="buttons-block">
-								<button type="submit" class="btn btn-green">Отправить</button>
-							</div>
-						</form>
-					</div>
+					<form class="form" action="">
+						<div class="form-group">
+							<input type="text" class="form-control" id="name" placeholder="Ваше имя" name="name">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" id="email" placeholder="Email/телефон" name="email">
+						</div>
+						<div class="form-group textarea">
+							<textarea class="form-control" rows="5" id="comment" placeholder="Сообщение"></textarea>
+						</div>
+						<div class="form-group capcha">
+							<input type="password" id="password" name="password" class="form-control" placeholder="Введите код с картинки">
+							<img src="images/capcha.png" class="capcha-img" alt="">
+						</div>
+						<div class="buttons-block">
+							<button type="submit" class="btn btn-green">Отправить</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
