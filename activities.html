@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-responsive.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
@@ -20,7 +21,8 @@
 					<div class="container__flex">
 						<div class="site-branding">
 							<a class="site-logo" href="main.html">
-								<img src="images/logo.png" alt="">
+								<img src="images/logo.png" alt="" class="logo__desktop">								
+								<img src="images/logo_mobile.png" alt="" class="logo__mobile">
 							</a>
 						</div>
 						<nav class="main-navigation" role="navigation">
@@ -28,15 +30,15 @@
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
 								  aria-expanded="false">
-									<span class="sr-only">Toggle navigation</span>
+									<span class="sr-only">Меню</span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
 							</div>
 							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-								<ul class="nav navbar-nav navbar-right">
+							<div class="main-menu__wrap collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav menu">
 									<li class="dropdown-underline">
 										<a class="navbar-link-item" href="#">О фонде</a>
 									</li>
@@ -44,8 +46,7 @@
 										<a class="navbar-link-item" href="#">О Михаиле</a>
 									</li>
 									<li class="dropdown dropdown-underline">
-										<a class="navbar-link-item active" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-										  aria-expanded="false">Деятельность
+										<a class="navbar-link-item" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Деятельность
 											<!-- <span class="caret"></span> -->
 										</a>
 										<ul class="sub-menu dropdown-menu dropdown-menu-left">
@@ -82,10 +83,20 @@
 							</div>
 							<!-- /.navbar-collapse -->
 						</nav>
-						<div class="header-search pull-right">
+						<div class="header-search">
 							<span class="search-form__toogle">
-								<i class="glyphicon glyphicon-search"></i>
+								<i class="fa fa-search" aria-hidden="true"></i>
 							</span>
+							<!-- <form role="search" method="get" class="search-form" action="">
+								<label>
+									<span class="screen-reader-text">Поиск:</span>
+									<input type="search" class="search-form__field" placeholder="Поиск" value="" name="search" title="Поиск:">
+								</label>
+								<button type="submit" class="search-form__submit btn btn-primary">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+							</form>
+							<span class="search-form__close"></span> -->
 						</div>
 					</div>
 				</div>
@@ -104,7 +115,7 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 							<div class="about-event">
-								<div class="event-img">
+								<div class="event-img__big">
 									<img src="images/bdt_big.jpg" alt="БДТ им. Г.А.Товстоногова">
 								</div>
 								<div class="event-description">
@@ -141,7 +152,7 @@
 						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
 							<div class="other-events">
 								<div class="block-title-underline"></div>
-								<div class="other-events-title">Дргуие проекты</div>
+								<div class="other-events-title">Другие проекты</div>
 								<div class="other-events-item">
 									<div class="item-title">Фестиваль Дягилев P.S.</div>
 									<p class="block-txt">Михаил Баженов выступает стратегическим партнером со дня основания ежегодного Международного Фестиваля искусств
@@ -177,14 +188,14 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="row row-top">
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<div class="col-xxs-12 col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<div class="site-branding">
 							<a class="site-logo" href="#">
 								<img src="images/logo_footer.png" alt="">
 							</a>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<div class="col-xxs-12 col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<div class="social-network-icons">
 							<i class="fa fa-facebook" aria-hidden="true"></i>
 							<i class="fa fa-twitter" aria-hidden="true"></i>
@@ -192,15 +203,15 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="row row-bottom">
+					<div class="col-xxs-12 col-xs-8 col-sm-8 col-md-8 col-lg-8">
 						<div class="site-copyrights">
 							<span class="site-update">2017</span>
 							<span class="site-owner">© Баженов Михаил Викторович</span>
 							<a class="footer-link">Политика конфиденциальности</a>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<div class="col-xxs-12 col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<div class="site-creator">Создание сайта:
 							<a class="footer-link">«Веб Гармония»</a>
 						</div>

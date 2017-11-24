@@ -7,9 +7,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Фонд Михаила Баженова</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap_my.css"> -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap_my.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-responsive.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
@@ -21,7 +22,8 @@
 					<div class="container__flex">
 						<div class="site-branding">
 							<a class="site-logo" href="main.html">
-								<img src="images/logo.png" alt="">
+								<img src="images/logo.png" alt="" class="logo__desktop">								
+								<img src="images/logo_mobile.png" alt="" class="logo__mobile">
 							</a>
 						</div>
 						<nav class="main-navigation" role="navigation">
@@ -29,15 +31,15 @@
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
 								  aria-expanded="false">
-									<span class="sr-only">Toggle navigation</span>
+									<span class="sr-only">Меню</span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
 							</div>
 							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-								<ul class="nav navbar-nav navbar-right">
+							<div class="main-menu__wrap collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav menu">
 									<li class="dropdown-underline">
 										<a class="navbar-link-item" href="#">О фонде</a>
 									</li>
@@ -82,10 +84,20 @@
 							</div>
 							<!-- /.navbar-collapse -->
 						</nav>
-						<div class="header-search pull-right">
+						<div class="header-search">
 							<span class="search-form__toogle">
-								<i class="glyphicon glyphicon-search"></i>
+								<i class="fa fa-search" aria-hidden="true"></i>
 							</span>
+							<!-- <form role="search" method="get" class="search-form" action="">
+								<label>
+									<span class="screen-reader-text">Поиск:</span>
+									<input type="search" class="search-form__field" placeholder="Поиск" value="" name="search" title="Поиск:">
+								</label>
+								<button type="submit" class="search-form__submit btn btn-primary">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+							</form>
+							<span class="search-form__close"></span> -->
 						</div>
 					</div>
 				</div>
@@ -94,7 +106,7 @@
 				<div class="primary-info primary-info-bg">
 					<div class="container">
 						<div class="row">
-							<div class="col-xs-12 col-sm-10 col-md-5 col-lg-5">
+							<div class="col-xs-8 col-sm-8 col-md-6 col-lg-5">
 								<div class="primary-info-inner">
 									<h1 class="primary-info__title">
 										<span class="primary-info__subtitle">Фонд</span>Михаила Баженова</h1>
@@ -120,10 +132,10 @@
 						<p>Михаил Баженов является совладельцем и вице-президентом Холдинговой компании «Адамант», бренда Международная неделя
 							моды «Aurora Fashion Week Russia» , Академии актерского мастерства «Doors to Hollywood» в Москве, эксклюзивной Японской
 							косметической линии «Forlle’d», а также совладельцем 14 известных в Петербурге и Москве ресторанов брэнда Ginza Project.</p>
-					</div>
-					<div class="buttons-block">
-						<a href="#" class="btn btn-transparent btn-transparent__gray btn__left">Подробнее</a>
-						<a href="#" class="btn btn-green">Предложить проект</a>
+						<div class="buttons-block">
+							<a href="#" class="btn btn-transparent btn-transparent__gray btn__left">Подробнее</a>
+							<a href="#" class="btn btn-green">Предложить проект</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -134,7 +146,7 @@
 					<span class="block-title-underline"></span>
 					<div class="events-list">
 						<div class="row">
-							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+							<div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 col-lg-4">
 								<div class="event-list-item">
 									<div class="event-img">
 										<span class="event-status active">Реализуется</span>
@@ -150,7 +162,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+							<div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 col-lg-4">
 								<div class="event-list-item">
 									<div class="event-img">
 										<span class="event-status active">Реализуется</span>
@@ -166,7 +178,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+							<div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 col-lg-4">
 								<div class="event-list-item">
 									<div class="event-img">
 										<span class="event-status complete">Завершён</span>
@@ -182,7 +194,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+							<div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 col-lg-4">
 								<div class="event-list-item">
 									<div class="event-img">
 										<span class="event-status complete">Завершён</span>
@@ -198,7 +210,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+							<div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 col-lg-4">
 								<div class="event-list-item">
 									<div class="event-img">
 										<span class="event-status active">Реализуется</span>
@@ -214,7 +226,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+							<div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 col-lg-4">
 								<div class="event-list-item">
 									<div class="event-img">
 										<span class="event-status active">Реализуется</span>
@@ -270,14 +282,14 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="row row-top">
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<div class="col-xxs-12 col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<div class="site-branding">
 							<a class="site-logo" href="#">
 								<img src="images/logo_footer.png" alt="">
 							</a>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<div class="col-xxs-12 col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<div class="social-network-icons">
 							<i class="fa fa-facebook" aria-hidden="true"></i>
 							<i class="fa fa-twitter" aria-hidden="true"></i>
@@ -285,15 +297,15 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="row row-bottom">
+					<div class="col-xxs-12 col-xs-8 col-sm-8 col-md-8 col-lg-8">
 						<div class="site-copyrights">
 							<span class="site-update">2017</span>
 							<span class="site-owner">© Баженов Михаил Викторович</span>
 							<a class="footer-link">Политика конфиденциальности</a>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<div class="col-xxs-12 col-xs-4 col-sm-4 col-md-4 col-lg-4">
 						<div class="site-creator">Создание сайта:
 							<a class="footer-link">«Веб Гармония»</a>
 						</div>
