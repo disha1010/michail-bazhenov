@@ -21,7 +21,8 @@
           <div class="container__flex">
             <div class="site-branding">
               <a class="site-logo" href="main.html">
-                <img src="images/logo.png" alt="">
+								<img src="images/logo.png" alt="" class="logo__desktop">								
+								<img src="images/logo_mobile.png" alt="" class="logo__mobile">
               </a>
             </div>
             <nav class="main-navigation" role="navigation">
@@ -38,44 +39,45 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="main-menu__wrap collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav menu">
-                  <li class="dropdown-underline">
+                  <li class="menu-item dropdown-underline">
                     <a class="navbar-link-item" href="#">О фонде</a>
                   </li>
-                  <li class="dropdown-underline">
+                  <li class="menu-item dropdown-underline">
                     <a class="navbar-link-item" href="#">О Михаиле</a>
                   </li>
-                  <li class="dropdown dropdown-underline">
+                  <li class="menu-item dropdown dropdown-underline">
+                    <span class="sub-menu-toggle"></span>
                     <a class="navbar-link-item" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Деятельность
                       <!-- <span class="caret"></span> -->
                     </a>
                     <ul class="sub-menu dropdown-menu dropdown-menu-left">
-                      <li>
+                      <li class="sub-menu-item">
                         <a class="dropdown-link-item" href="activities.html">БДТ им. Товстоногова</a>
                       </li>
-                      <li>
+                      <li class="sub-menu-item">
                         <a class="dropdown-link-item" href="#">Фестиваль Фонд Курехина</a>
                       </li>
-                      <li>
+                      <li class="sub-menu-item">
                         <a class="dropdown-link-item" href="#">Фестиваль Дягилев P.S.</a>
                       </li>
-                      <li>
+                      <li class="sub-menu-item">
                         <a class="dropdown-link-item" href="#">Храм Рождества Иоанна Предпечи в Юкках</a>
                       </li>
-                      <li>
+                      <li class="sub-menu-item">
                         <a class="dropdown-link-item" href="#">Собор Михаила Архангела в Токсово</a>
                       </li>
-                      <li>
+                      <li class="sub-menu-item">
                         <a class="dropdown-link-item" href="#">Помощь детям с онкологиями</a>
                       </li>
-                      <li>
+                      <li class="sub-menu-item">
                         <a class="dropdown-link-item" href="#">Поддержка детского дома</a>
                       </li>
                     </ul>
                   </li>
-                  <li class="dropdown-underline">
+                  <li class="menu-item dropdown-underline">
                     <a class="navbar-link-item" href="donations.html">Пожертвования</a>
                   </li>
-                  <li class="dropdown-underline">
+                  <li class="menu-item dropdown-underline">
                     <a class="navbar-link-item" href="#">Контакты</a>
                   </li>
                 </ul>
@@ -101,15 +103,15 @@
         </div>
       </div>
     </header>
-    <div class="main-content">
+    <div class="main-content donations-page">
       <div class="breadcrumbs">
         <div class="container">
           <span class="breadcrumbs-item">Главная</span>
           <span class="breadcrumbs-item">Деятельность</span>
           <span class="breadcrumbs-item current">БДТ им. Г.А.Товстоногова</span>
         </div>
-        <div class="donations-bg"></div>
       </div>
+      <div class="donations-bg"></div>
       <div class="donations-content">
         <div class="container">
           <div class="donation-description">
