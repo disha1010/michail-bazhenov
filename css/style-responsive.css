@@ -74,14 +74,14 @@
   .main-navigation .navbar-toggle {
     display: block;    
     position: absolute;
-    left: 0;
+    left: 15px;
     top: 0;
     margin-top: 12px;
   }
   .header-search {
     display: block;    
     position: absolute;
-    right: 0;
+    right: 15px;
     top: 0;
   }
   #vendor-bootstrap .navbar-toggle .icon-bar {
@@ -91,6 +91,8 @@
   .container__flex {
     position: relative;
     justify-content: center;
+    margin-left: -15px;
+    margin-right: -15px;
   }
   .header-top {    
     padding-top: 13px; 
@@ -123,11 +125,15 @@
   }
   .main-menu__wrap {
     background-color: #f6f6f6;
-    margin-left: -15px;
-    margin-right: -15px;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    top: 70px;
   }
   #vendor-bootstrap .navbar-link-item {
     padding: 0 0 0 20px;
+
+    font-size: 12px;
   }
   .menu  .menu-item:first-child {
     border-top: 1px solid #e2ecf2;
@@ -135,10 +141,8 @@
   .menu-item {
     border-bottom: 1px solid #e2ecf2;
     margin-left: -15px;
-    margin-right: -15px;
-  }
-  .navbar-link-item {
-    font-size: 12px;
+    margin-right: -15px;   
+    background-color: #f6f6f6;
   }
   .header-top .main-navigation .sub-menu {
     padding: 0;
@@ -154,14 +158,44 @@
   .sub-menu-item {
     border-bottom: 1px solid #e2ecf2;
   }
+  .sub-menu-item:last-child {
+    border-bottom: unset;
+  }
+  .main-navigation .dropdown:hover > .dropdown-menu {
+    display: none;
+  }
+  .main-navigation .dropdown.open > .dropdown-menu {
+    display: block;
+  }  
   .main-navigation .menu .dropdown .sub-menu-toggle {
     position: absolute;
     top: 0;
-    height: 40px;
-    width: 80px;
+    height: 35px;
+    width: 60px;
     right: 0;
     z-index: 99;
+    color: #7a8893;
+    cursor: pointer;
+  }  
+  .main-navigation .menu .dropdown .sub-menu-toggle:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -7px;
+      -webkit-transform: translate(-50%);
+      transform: translate(-50%);
+      content: '\f107';
+      font-family: 'FontAwesome';
+      font-size: 14px;
+      line-height: 1;
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease;
   }
+  .main-navigation .menu .dropdown .sub-menu-toggle.active::before {
+    -webkit-transform: translate(-50%) rotateX(180deg);
+    transform: translate(-50%) rotateX(180deg);
+}
 }
 @media (max-width: 750px) {
   .event-img {
@@ -316,5 +350,8 @@
   }
   .donation-pay-form .btn-green {
     margin-right: 10px;
+  }
+  .main-menu__wrap {
+    top: unset;
   }
 }

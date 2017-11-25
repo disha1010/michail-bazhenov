@@ -381,8 +381,14 @@ h1 {
   color: #fff;
   font-size: calc(18px + 10%);
 }
-.social-network-icons i:last-child {
-  margin-right: 0;
+.social-network-icons i:first-child:hover {  
+  margin-right: 29px;
+}
+.social-network-icons i:nth-child(2):hover {  
+  margin-right: 28px;
+}
+.social-network-icons i:last-child:hover {  
+  margin-right: 28px;
 }
 .site-owner:after {
   content: "|";
