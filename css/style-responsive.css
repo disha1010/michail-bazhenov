@@ -74,7 +74,7 @@
   .main-navigation .navbar-toggle {
     display: block;    
     position: absolute;
-    left: 15px;
+    left: 5px;
     top: 0;
     margin-top: 12px;
   }
@@ -82,7 +82,7 @@
     display: block;    
     position: absolute;
     right: 15px;
-    top: 0;
+    /* top: 0; */
   }
   #vendor-bootstrap .navbar-toggle .icon-bar {
     background-color: #136764;
@@ -195,7 +195,23 @@
   .main-navigation .menu .dropdown .sub-menu-toggle.active::before {
     -webkit-transform: translate(-50%) rotateX(180deg);
     transform: translate(-50%) rotateX(180deg);
-}
+  }
+  .search-active .header-search {
+    position: unset;
+  }
+  .search-active .search-form {
+    left: 15px;
+  }
+  .search-active .search-form__close {
+    right: 15px;
+    transition: none;
+  }
+  .search-active .search-form__close:after {
+    left: -15px;  
+  }
+  .search-form__toggle {
+    color: #136764;
+  }
 }
 @media (max-width: 750px) {
   .event-img {
@@ -353,5 +369,18 @@
   }
   .main-menu__wrap {
     top: unset;
+  }
+  .block-title {
+    margin-bottom: 25px;
+    font-size: 21px;
+  }
+  .block-title-underline {
+    margin-bottom: 25px;
+  }
+  .footer {
+    padding: 25px 0 15px;
+  }
+  .about-event .event-status {
+    margin-bottom: 20px;
   }
 }
