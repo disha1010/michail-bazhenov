@@ -679,6 +679,7 @@ color: #136764;
 .header-search .search-form label {  
   width: 100%;
   margin-right: 15px;
+  margin-bottom: 0;
 }
 .header-search .search-form__field {
   border: none;
