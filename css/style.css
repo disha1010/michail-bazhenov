@@ -13,7 +13,10 @@
   font-weight: 600;
 }
 * {
-  font-family: OpenSans, sans-serif
+  font-family: OpenSans, sans-serif;
+}
+body {
+  overflow-x: hidden;
 }
 a:hover {
   text-decoration: none;
@@ -249,6 +252,9 @@ h1 {
 .activities {
   text-align: center;
 }
+.activities .events-list {
+  margin-bottom: 15px;
+}
 .event-list-item {
   border: 1px solid #d8d8d8;
   /* height: 500px; */
@@ -337,6 +343,7 @@ h1 {
 }
 .request-form .textarea .form-control {
   padding-top: 15px;
+  overflow-x: hidden;
 }
 .request-form .form-group {
   margin-bottom: 25px;
@@ -362,7 +369,7 @@ h1 {
 }
 .footer {
   background-color: #2a2f33;
-  padding: 35px 0 30px;
+  padding: 25px 0 30px;
 }
 .footer .social-network-icons {
   text-align: right;
@@ -373,6 +380,9 @@ h1 {
 .social-network-icons i {
   margin-right: 30px;
   cursor: pointer;
+}
+.social-network-icons i:last-child {
+  margin-right: 0;
 }
 .social-network-icons i:hover {  
   color: #fff;
@@ -385,7 +395,7 @@ h1 {
   margin-right: 28px;
 }
 .social-network-icons i:last-child:hover {  
-  margin-right: 28px;
+  margin-left: -2px;
 }
 .site-owner:after {
   content: "|";
@@ -399,7 +409,7 @@ h1 {
   text-align: right;
 }
 .footer .row-top {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 .footer-link {
   color: #fff;
