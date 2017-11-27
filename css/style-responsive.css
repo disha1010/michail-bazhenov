@@ -1,6 +1,6 @@
 @media (max-width: 1199px) {
   .event-img {
-    height: 205px;
+    max-height: 205px;
   } 
   .event-description {
     min-height: 275px;
@@ -21,7 +21,7 @@
 }
 @media (max-width: 991px) {
   .event-img {
-    height: 242px;
+    max-height: 242px;
   } 
   .footer {
     font-size: 12px;
@@ -63,7 +63,7 @@
 }
 @media (max-width: 767px) {
   .event-img {
-    height: 242px;
+    max-height: 242px;
   }   
   .main-navigation {
     position: unset;
@@ -229,7 +229,7 @@
 }
 @media (max-width: 750px) {
   .event-img {
-    height: 236px;
+    max-height: 236px;
   } 
   .block-txt {
     font-size: 14px;
@@ -246,7 +246,10 @@
   .request-form .block-txt {
     font-size: 16px;
     width: 80%;
-  }  
+  } 
+  .event-description {
+    min-height: 300px;
+  } 
   /* donations */
   .donation-description {
     margin-bottom: 50px;
@@ -263,7 +266,7 @@
     width: 90%;
   }  
   .event-img {
-    height: 224px;
+    max-height: 224px;
   }
   .block-txt {
     width: 90%;
@@ -271,22 +274,12 @@
   .event-link {
     font-size: 15px;
   }
+  .event-description {
+    min-height: 270px;
+  } 
   .event-description p {
     font-size: 13px;
-  }  
-  .col-xxs-12 {
-    width: 100%;
   } 
-  .footer {
-    font-size: 14px; 
-    text-align: center;
-  }
-  .footer .social-network-icons {
-    text-align: center;
-  }
-  .site-creator {
-    text-align: center;
-  }
   .footer .row-top {
     margin-bottom: 0px;
   }
@@ -300,22 +293,35 @@
     text-align: start;
   }
 }
-@media (max-width: 587px) {
-  .primary-info-inner .btn__left {
-    margin-bottom: 15px;
-    /* width: 170px; */
+@media (max-width: 587px) {  
+  .header-wrapper .site-logo {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+  .event-img {
+    max-height: 162px;
+  } 
+  .event-description {
+    min-height: 310px;
   }
   .primary-info.primary-info-bg {
     background-image: url(../images/first_screen_bg_small.jpg);
+  } 
+  .primary-info-inner .btn__left {
+    margin-bottom: 15px;
+    margin-right: 30px; 
   }
 }
-@media (min-width: 300px) and (max-width: 500px) {
-  .logo__mobile {
-    display: block;
-    margin-right: -20px;
-  }
-  .logo__desktop {
-    display: none;
+@media (max-width: 499px) {  
+  .col-xxs-12 {
+    width: 100%;
+  }   
+  .event-img {
+    min-height: 316px;
+  } 
+  .event-description {
+    min-height: 190px;
   }
   .header-top {
     padding-bottom: 0;
@@ -332,7 +338,7 @@
     width: 170px;
   }  
   .fond-about .buttons-block {
-    width: 69%;
+    width: 75%;
     margin: 0 auto;
   } 
   .fond-about .buttons-block .btn {
@@ -348,9 +354,6 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .event-img {
-    height: 224px;
-  } 
   .request-form .capcha .form-control {
     width: 100%;
     order: 3;
@@ -364,6 +367,21 @@
   }
   .request-form .block-txt {
     font-size: 14px;
+  }
+  .footer {
+    font-size: 14px; 
+    text-align: center;
+  }
+  .footer .social-network-icons {
+    text-align: center;
+  }
+  .footer .site-logo {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+  .site-creator {
+    text-align: center;
   }
   /* activities page */
   .about-event .event-description .main-title {
@@ -404,4 +422,14 @@
   .about-event .event-status {
     margin-bottom: 20px;
   }
+}
+@media (max-width: 469px) {
+  .event-img {
+    min-height: 290px;
+  } 
+}
+@media (max-width: 399px) {
+  .event-img {
+    min-height: 200px;
+  } 
 }

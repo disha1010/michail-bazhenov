@@ -44,8 +44,12 @@ h1 {
   order: 0;  
   display: inline-block;
 }
-.logo__mobile {
-  display: none;
+.logo__svg {
+  width: 100%;
+}
+.footer-logo__svg {
+  background-image: url("../images/logo.svg");
+  color: #fff;
 }
 .main-navigation {
   display: block;
@@ -267,6 +271,7 @@ h1 {
   position: relative;
   overflow: hidden;
   height: 253px;
+  display: block;
 }
 .event-status.active {
   position: absolute;
@@ -295,7 +300,13 @@ h1 {
   transition: .5s;
   left: 0px;
   top: 0;
-  position: absolute
+  position: relative;
+}
+.event-list-item:hover .event-img img {
+  width: 110%;
+  position: relative;
+  left: -5%;
+  top: -10%;
 }
 .event-list-item:hover .event-img img {
   width: 110%;
@@ -305,8 +316,8 @@ h1 {
 }
 .event-description {
   text-align: center;
-  padding: 30px 30px 0;
-  min-height: 230px;
+  padding: 30px 30px 40px;
+  min-height: 275px;
 }
 .event-list-item:hover .event-description {
   /* margin-top: -7%; */
