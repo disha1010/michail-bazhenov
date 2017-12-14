@@ -105,9 +105,9 @@
     <div class="main-content donations-page">
       <div class="breadcrumbs">
         <div class="container">
-          <span class="breadcrumbs-item">Главная</span>
-          <span class="breadcrumbs-item">Деятельность</span>
-          <span class="breadcrumbs-item current">БДТ им. Г.А.Товстоногова</span>
+					<a href="#" class="breadcrumbs-item">Главная</a>
+					<a href="#" class="breadcrumbs-item">Деятельность</a>
+					<a href="#" class="breadcrumbs-item current">БДТ им. Г.А.Товстоногова</a>
         </div>
       </div>
       <div class="donations-bg"></div>
@@ -132,14 +132,14 @@
               </div>
               <div class="form-group">
                 <label class="form-label" for="need-fio">ФИО плательщика</label>
-                <input class="form-control" type="text" name="need-fio" value="" placeholder="Иванов Иван Иванович">
+                <input class="form-control" type="text" name="need-fio" value="" placeholder="Иванов Иван Иванович" required="true">
               </div>
               <div class="form-group">
                 <label class="form-label" for="sum">Сумма</label>
                 <input class="form-control" type="hidden" name="label" value="$order_id">
                 <input class="form-control" type="hidden" name="quickpay-form" value="donate">
                 <input class="form-control" type="hidden" name="targets" value="транзакция {order_id}">
-                <input class="form-control" type="number" name="sum" value="" data-type="number">
+                <input class="form-control" type="number" name="sum" value="" data-type="number" required="true">
                 <span class="icon-rub">&#8381;</span>
               </div>
               <span class="block-title-underline"></span>
